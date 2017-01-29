@@ -43,6 +43,8 @@
 
    [[./doc/img/base.png]]
 
+   [[http://www.keyboard-layout-editor.com/#/gists/9a7716fe0025c38e2650abe551c57513][source]]
+ 
 ** Источники
 
    - [[https://ergoemacs.github.io/][Xah Lee]]
