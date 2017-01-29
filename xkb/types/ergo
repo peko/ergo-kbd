@@ -1,0 +1,18 @@
+partial xkb_types "four_level" {
+
+    type "FOUR_LEVEL_ERGO" {
+
+        modifiers = Shift+Mod5+Mod3;
+
+        map[None ] = Level1;
+        map[Shift] = Level2;
+        map[Mod5 ] = Level3;
+        map[Mod3 ] = Level4;
+
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "Level3";
+        level_name[Level4] = "Level4";
+    };
+
+};
