@@ -13,8 +13,11 @@ xkb_keymap {
         // include "capslock(backspace)"
         // include "keypad(pointerkeys)"
         include "ergo(cursor)"
+        // include "ergo(caps_gr1)"
+        include "ergo(caps_gr2)"
+        // include "ergo(tab_gr1)"
         // include "ergo(numbers)"
     };
 
-	  xkb_geometry  { include "pc(pc105)"	};
+	  XKB_geometry  { include "pc(pc105)"	};
 };

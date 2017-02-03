@@ -5,19 +5,44 @@
 
 // MODIFIERS
 
-// Caps - Level3
+// CAPS - LEVEL3
+
+//ONE GROUP
 partial modifier_keys
-xkb_symbols "left_level3" {
+xkb_symbols "caps_gr1" {
     key <CAPS> {
         type[Group1]="ONE_LEVEL",
-        symbols[Group1] = [ ISO_Level3_Shift ]
+        symbols[Group1]=[ISO_Level3_Shift]
     };
-    include "level3(modifier_mapping)"
+
+    // replace key <LVL3> {
+    //    type[Group1]="ONE_LEVEL",
+    //    symbols[Group1]=[ ISO_Level3_Shift ]
+    // };
+    // modifier_map Mod5 { <LVL3> };
 };
 
-// Tab - Level4
+// TWO GROUPS
 partial modifier_keys
-xkb_symbols "left_level4" {
+xkb_symbols "caps_gr2" {
+    key <CAPS> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1]=[ISO_Level3_Shift],
+        type[Group2]="ONE_LEVEL",
+        symbols[Group2]=[ISO_Level3_Shift]
+    };
+    replace key <LVL3> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ],
+        type[Group2]="ONE_LEVEL",
+        symbols[Group2]=[ISO_Level3_Shift]
+    };
+    modifier_map Mod5 { <LVL3> };
+};
+
+// TAB - LEVEL4
+partial modifier_keys
+xkb_symbols "tab_gr1" {
     replace key <TAB> {[ VoidSymbol ]};
     modifier_map Mod3 { <TAB> };
 };
@@ -101,8 +126,8 @@ xkb_symbols "cursor" {
     key <SPCE> { [ NoSymbol, NoSymbol, Tab, underscore] }; // " "
 
     // modificators
-    include "ergo(left_level3)"
-    include "ergo(left_level4)"
+    // include "ergo(caps_gr1)"
+    // include "ergo(left_level4)"
 };
 
 // Level 3 - symbols
@@ -179,7 +204,7 @@ xkb_symbols "numbers" {
     // key <SPCE> { [ NoSymbol, NoSymbol, Tab, NoSymbol ] }; // " "
     
     // modificators
-    include "ergo(right_level3)"
+    // include "ergo(caps_gr1)"
 };
 
 // level 4 MOUSE
