@@ -143,6 +143,7 @@ xkb_symbols "caps_overlay1" {
     };
 };
 
+// Cursor movements
 partial alphanumeric_keys
 xkb_symbols "overlay1" {
     key  <AD08> { overlay1 = <UP>   };

@@ -19,5 +19,5 @@ xkb_keymap {
         // include "ergo(numbers)"
     };
 
-	  XKB_geometry  { include "pc(pc105)"	};
+	  xkb_geometry  { include "pc(pc105)"	};
 };
