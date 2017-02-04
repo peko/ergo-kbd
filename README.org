@@ -48,3 +48,6 @@
    - [[https://ergoemacs.github.io/][Xah Lee]]
    - [[http://pascal.tsu.ru/other/xkb/][Иван Паскаль]]
    - [[https://habrahabr.ru/post/222285/][Фил Пирожков]]
+   - [[http://superuser.com/questions/801611/how-to-make-all-applications-respect-my-modified-xkb-layout][Stack Overflow]]
+** Инструменты
+   - xcape 
