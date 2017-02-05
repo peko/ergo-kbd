@@ -12,6 +12,7 @@ xkb_keymap {
 
         include "us(workman)"          // layout
         include "ru(workman):2"        // second
+        include "ergo(altgr)"          // altgr for switch
         include "group(shifts_toggle)" // switch
 
         include "ergo(overlay1)"      // keys binding

@@ -5,8 +5,17 @@
 
 // MODIFIERS
 
-// CAPS - LEVEL3
 
+partial modifier_keys
+xkb_symbols "altgr" {
+  replace key <LVL3> {
+       type[Group1]="ONE_LEVEL",
+       symbols[Group1]=[ ISO_Level3_Shift ]
+   };
+   modifier_map Mod5 { <LVL3> };
+};
+
+// CAPS - LEVEL3
 //ONE GROUP
 partial modifier_keys
 xkb_symbols "caps_gr1" {
