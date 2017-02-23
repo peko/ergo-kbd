@@ -164,7 +164,13 @@ xkb_symbols "overlay1" {
     key  <AC07> { overlay1 = <LEFT> };
     key  <AC08> { overlay1 = <DOWN> };
     key  <AC09> { overlay1 = <RGHT> };
-    key  <AC10> { overlay1 = <ESC>  };
+    key  <AC10> { overlay1 = <DELE> };
+
+    key  <AB07> { overlay1 = <PGDN> };
+    key  <AB08> { overlay1 = <ESC>  };
+    key  <AB09> { overlay1 = <PGUP> };
+
+    key  <SPCE> { overlay1 = <TAB>  };
 };
 
 
