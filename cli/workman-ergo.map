@@ -92,4 +92,9 @@ alt keycode  28 = Meta_Control_m
     keycode  54 = Shift
     keycode  56 = Alt
     keycode  97 = Control
+    
     keycode  42 = AltGr
+plain   keycode 44 = z
+shift   keycode 44 = Show_Memory
+control keycode 44 = Show_State
+alt     keycode 44 = Show_Registers
