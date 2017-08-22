@@ -18,7 +18,7 @@ charset "iso-8859-15"  # use a ISO-8859-15 font, e.g.: consolechars -f lat9v-14
 # CtrlL      64
 # CtrlR     128
 # CapsShift 256
-keymaps 0,1,2,4,8, 6,12
+keymaps 0,1,2,4,8
 
 # include "qwerty-layout"
 include "linux-with-alt-and-altgr"
@@ -82,19 +82,44 @@ keycode  86 = minus           underscore   Meta_minus          nul              
 keycode  57 = space           space        Meta_space          nul                   Meta_space
 
 
+
     keycode   1 = Escape
     keycode  14 = Delete
     keycode  15 = Tab
     keycode  28 = Return
 alt keycode  28 = Meta_Control_m
     keycode  29 = Control
-    # keycode  42 = Shift
+    keycode  42 = Shift
     keycode  54 = Shift
     keycode  56 = Alt
+    кеыцоде  58 = Caps_Lock
     keycode  97 = Control
-    
-    keycode  42 = AltGr
-plain   keycode 44 = z
-shift   keycode 44 = Show_Memory
-control keycode 44 = Show_State
-alt     keycode 44 = Show_Registers
+
+string F1     = "\033[[A"
+string F2     = "\033[[B"
+string F3     = "\033[[C"
+string F4     = "\033[[D"
+string F5     = "\033[[E"
+string F6     = "\033[17~"
+string F7     = "\033[18~"
+string F8     = "\033[19~"
+string F9     = "\033[20~"
+string F10    = "\033[21~"
+string F11    = "\033[23~"
+string F12    = "\033[24~"
+string F13    = "\033[25~"
+string F14    = "\033[26~"
+string F15    = "\033[28~"
+string F16    = "\033[29~"
+string F17    = "\033[31~"
+string F18    = "\033[32~"
+string F19    = "\033[33~"
+string F20    = "\033[34~"
+string Find   = "\033[1~"
+string Insert = "\033[2~"
+string Remove = "\033[3~"
+string Select = "\033[4~"
+string Prior  = "\033[5~"
+string Next   = "\033[6~"
+string Macro  = "\033[M"
+string Pause  = "\033[P"

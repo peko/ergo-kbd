@@ -1,0 +1,69 @@
+
+include "./workman.map"
+
+# layout 1
+# ┌────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬────────┐
+# │ `  │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │ ─   │ =   │ BS     │
+# │ ~  │ !   │ @   │ #   │ $   │ %   │ ^   │ &   │ *   │ (   │ )   │ _   │ +   │        │
+# ├────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬─────┤
+# │ Tab   │     │     │     │     │     │     │ HOM │  ↑  │ END │     │     │     │     │
+# │       │     │     │     │     │     │     │ BSP │ PGU │ DEL │     │     │     │     │
+# ├───────┴─┲━━━┷━┳━━━┷━┳━━━┷━┳━━━┷━┱───┴─┬───┴─┲━━━┷━┳━━━┷━┳━━━┷━┳━━━┷━┱───┴─┬───┴─────┤
+# │ AltGr   ┃     ┃     ┃     ┃     ┃     │ BSP ┃  ←  ┃  ↓  ┃  →  ┃ DEL ┃     │Enter    │
+# │         ┃     ┃     ┃     ┃     ┃     │     ┃ HOM ┃ PGD ┃ END ┃     ┃     │         │
+# ├─────────┺━━┯━━┻━━┯━━┻━━┯━━┻━━┯━━┹──┬──┴──┬──┺━━┯━━┻━━┯━━┻━━┯━━┻━━┯━━┹──┬──┴─────────┤
+# │Shift       │     │     │     │     │     │     │ PGU │ ESC │ PGD │     │ Shift      │
+# │            │     │     │     │     │     │     │     │     │     │     │            │
+# ├──────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┼────────────┤
+# │Ctrl  │Fn   │Win  │Alt  │ TAB                         │AltGr│Menu │Ctrl │            │
+# │      │     │     │     │  _                          │     │     │     │            │
+# └──────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴─────┴────────────┘
+#
+# BSP - Backspace
+# HOM - Home
+# PGD - PageDown
+# PGU - PageUp
+# DEL - Delete
+
+keycode 58 = AltGr
+
+# upper row
+# altgr keycode  16 =                              # q           
+# altgr keycode  17 =                              # d           
+# altgr keycode  18 =                              # r           
+# altgr keycode  19 =                              # w           
+# altgr keycode  20 =                              # b           
+# altgr keycode  21 =                              # j           
+  altgr keycode  22 = Home                         # f           
+  altgr keycode  23 = Up                           # u           
+  altgr keycode  24 = End                          # p           
+# altgr keycode  25 =                              # semicolon   
+# altgr keycode  26 =                              # bracketleft 
+# altgr keycode  27 =                              # bracketright
+# altgr keycode  43 =                              # backslash   
+
+# home row
+# altgr keycode 30 =                               # a
+# altgr keycode 31 =                               # s
+# altgr keycode 32 =                               # h
+# altgr keycode 33 =                               # t
+# altgr keycode 34 =                               # g
+  altgr keycode 35 = BackSpace                     # h/y
+  altgr keycode 36 = Left                          # j/n
+  altgr keycode 37 = Down                          # k/e
+  altgr keycode 38 = Right                         # l/o
+  altgr keycode 39 = Remove                        # ;/i
+# altgr keycode 40 =                               # apostrophe
+
+# bottom row
+# altgr keycode  44 =                              # z
+# altgr keycode  45 =                              # x
+# altgr keycode  46 =                              # m
+# altgr keycode  47 =                              # c
+# altgr keycode  48 =                              # v
+# altgr keycode  49 =                              # k
+  altgr keycode  50 = PageUp                       # l
+  altgr keycode  51 = Escape                       # comma
+  altgr keycode  52 = PageDown                     # period
+# altgr keycode  53 =                              # slash
+
