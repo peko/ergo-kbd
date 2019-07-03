@@ -169,34 +169,21 @@ xkb_symbols "overlay1" {
     key  <AB07> { overlay1 = <PGDN> };
     key  <AB08> { overlay1 = <ESC>  };
     key  <AB09> { overlay1 = <PGUP> };
+        
+
+    // Ctr_A Ctrl_X Ctrl_C, Ctrl_V
+    replace key <I240> { actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] };
+    replace key <I241> { actions[Group1] = [ RedirectKey(key=<LatX>,mods=Control) ] };
+    replace key <I242> { actions[Group1] = [ RedirectKey(key=<LatV>,mods=Control) ] };
+    replace key <I243> { actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] };
+    replace key <I244> { actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] };
+
+    key <AC01> { overlay1 = <I240> }; // Ctrl + A 
+    key <AC02> { overlay1 = <I241> }; // Ctrl + X
+    key <AC03> { overlay1 = <I242> }; // Ctrl + C
+    key <AC04> { overlay1 = <I243> }; // Ctrl + V
+    key <AD01> { overlay1 = <I244> }; // Ctrl + Z
     
-    replace key <I154> {
-      type[Group1] = "ALPHABETIC", 
-      symbols[Group1] = [NoSymbol],
-      actions[Group1] = [RedirectKey(key=<LatA>,mods=Control)] 
-    };
-    replace key <I155> {
-      type[Group1] = "ALPHABETIC", 
-      symbols[Group1] = [NoSymbol],
-      actions[Group1] = [RedirectKey(key=<LatX>,mods=Control)] 
-    };
-    replace key <I156> {
-      type[Group1] = "ALPHABETIC", 
-      symbols[Group1] = [NoSymbol],
-      actions[Group1] = [RedirectKey(key=<LatV>,mods=Control)] 
-    };
-    replace key <I157> {
-      type[Group1] = "ALPHABETIC", 
-      symbols[Group1] = [NoSymbol],
-      actions[Group1] = [RedirectKey(key=<LatB>,mods=Control)] 
-    };
-    key <AC01> { overlay1 = <I154> };
-    key <AC02> { overlay1 = <I155> };
-    key <AC03> { overlay1 = <I156> };
-    key <AC04> { overlay1 = <I157> };
-
-    key  <SPCE> { overlay1 = <TAB>  };
-
 };
 
 
