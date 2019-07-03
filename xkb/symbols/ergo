@@ -5,7 +5,6 @@
 
 // MODIFIERS
 
-
 partial modifier_keys
 xkb_symbols "altgr" {
   replace key <LVL3> {
@@ -16,7 +15,7 @@ xkb_symbols "altgr" {
 };
 
 // CAPS - LEVEL3
-//ONE GROUP
+// ONE GROUP
 partial modifier_keys
 xkb_symbols "caps_gr1" {
 
@@ -97,19 +96,19 @@ xkb_symbols "cursor" {
     key  <AD08> { [ NoSymbol, NoSymbol,        Up,    Page_Up ] };
     key  <AD09> { [ NoSymbol, NoSymbol,       End,     Delete ] };
     // key  <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    //  key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    //  key <AD12> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key <AD12> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     //////////////////////////////////////////////////////////////
 
-    //  key <CAPS> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key  <CAPS> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    //  key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key  <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-     key <AC06> { [ NoSymbol, NoSymbol, BackSpace,   NoSymbol ] };
+    key  <AC06> { [ NoSymbol, NoSymbol, BackSpace,   NoSymbol ] };
     key  <AC07> { [ NoSymbol, NoSymbol,      Left,       Home ] };
     key  <AC08> { [ NoSymbol, NoSymbol,      Down,  Page_Down ] };
     key  <AC09> { [ NoSymbol, NoSymbol,     Right,        End ] };
@@ -141,7 +140,7 @@ xkb_symbols "cursor" {
 };
 
 
-// Bind alt to overlay switch
+// Bind CAPS to overlay switch
 partial modifier_keys
 xkb_symbols "caps_overlay1" {
     key <CAPS> {
@@ -153,6 +152,7 @@ xkb_symbols "caps_overlay1" {
 };
 
 // Cursor movements
+
 partial alphanumeric_keys
 xkb_symbols "overlay1" {
 
@@ -169,8 +169,34 @@ xkb_symbols "overlay1" {
     key  <AB07> { overlay1 = <PGDN> };
     key  <AB08> { overlay1 = <ESC>  };
     key  <AB09> { overlay1 = <PGUP> };
+    
+    replace key <I154> {
+      type[Group1] = "ALPHABETIC", 
+      symbols[Group1] = [NoSymbol],
+      actions[Group1] = [RedirectKey(key=<LatA>,mods=Control)] 
+    };
+    replace key <I155> {
+      type[Group1] = "ALPHABETIC", 
+      symbols[Group1] = [NoSymbol],
+      actions[Group1] = [RedirectKey(key=<LatX>,mods=Control)] 
+    };
+    replace key <I156> {
+      type[Group1] = "ALPHABETIC", 
+      symbols[Group1] = [NoSymbol],
+      actions[Group1] = [RedirectKey(key=<LatV>,mods=Control)] 
+    };
+    replace key <I157> {
+      type[Group1] = "ALPHABETIC", 
+      symbols[Group1] = [NoSymbol],
+      actions[Group1] = [RedirectKey(key=<LatB>,mods=Control)] 
+    };
+    key <AC01> { overlay1 = <I154> };
+    key <AC02> { overlay1 = <I155> };
+    key <AC03> { overlay1 = <I156> };
+    key <AC04> { overlay1 = <I157> };
 
     key  <SPCE> { overlay1 = <TAB>  };
+
 };
 
 
@@ -202,15 +228,15 @@ xkb_symbols "numbers" {
     key  <AD02> { [ NoSymbol, NoSymbol,    1, NoSymbol] };
     key  <AD03> { [ NoSymbol, NoSymbol,    2, NoSymbol] };
     key  <AD04> { [ NoSymbol, NoSymbol,    3, NoSymbol] };
-     key <AD05> { [ NoSymbol, NoSymbol,    4, NoSymbol] };
+    key  <AD05> { [ NoSymbol, NoSymbol,    4, NoSymbol] };
 
-    //  key <AD06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    // key  <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    // key  <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    // key  <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    // key  <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    //  key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
-    //  key <AD12> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
+    // key <AD12> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol] };
 
     ////////////////////////////////////////////////////////////////////
     
@@ -219,7 +245,7 @@ xkb_symbols "numbers" {
     key  <AC02> { [ NoSymbol, NoSymbol,        6, NoSymbol ] };
     key  <AC03> { [ NoSymbol, NoSymbol,        7, NoSymbol ] };
     key  <AC04> { [ NoSymbol, NoSymbol,        8, NoSymbol ] };
-     key <AC05> { [ NoSymbol, NoSymbol,        9, NoSymbol ] };
+    key <AC05> { [ NoSymbol, NoSymbol,        9, NoSymbol ] };
 
     //  key <AC06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -241,7 +267,7 @@ xkb_symbols "numbers" {
     // key  <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     // key  <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    //  key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    // key  <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     ///////////////////////////////////////////////////////////////////
     
