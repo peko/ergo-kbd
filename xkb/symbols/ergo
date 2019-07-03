@@ -171,6 +171,21 @@ xkb_symbols "overlay1" {
     key  <AB09> { overlay1 = <PGUP> };
 
     key  <SPCE> { overlay1 = <TAB>  };
+    
+
+    // Ctr_A Ctrl_X Ctrl_C, Ctrl_V
+    replace key <I240> { actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] };
+    replace key <I241> { actions[Group1] = [ RedirectKey(key=<LatX>,mods=Control) ] };
+    replace key <I242> { actions[Group1] = [ RedirectKey(key=<LatV>,mods=Control) ] };
+    replace key <I243> { actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] };
+    replace key <I244> { actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] };
+
+    key <AC01> { overlay1 = <I240> }; // Ctrl + A 
+    key <AC02> { overlay1 = <I241> }; // Ctrl + X
+    key <AC03> { overlay1 = <I242> }; // Ctrl + C
+    key <AC04> { overlay1 = <I243> }; // Ctrl + V
+    key <AD01> { overlay1 = <I244> }; // Ctrl + Z
+    
 };
 
 
