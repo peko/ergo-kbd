@@ -1,2 +1,2 @@
 #!/bin/bash
-xkbcomp -I`pwd`/ ergo-overlay.xkb $DISPLAY
+xkbcomp -I`pwd`/my/ my/ergo-overlay.xkb $DISPLAY

@@ -1,6 +1,0 @@
-// overlay switch definition
-partial xkb_compatibility "overlay1" {
-   interpret Overlay1_Enable {
-       action = SetControls(controls=overlay1);
-   };
-};

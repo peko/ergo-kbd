@@ -1,0 +1,19 @@
+xkb_keymap {
+    
+    xkb_keycodes  { include "evdev+aliases(qwerty)"	};
+	  xkb_types     { include "complete+ergo"	        };
+	  xkb_compat    { include "complete"	        };
+
+    xkb_symbols   {
+        include "pc"
+        include "us(workman)"
+        include "ru(workman):2"
+        include "group(shifts_toggle)"
+        include "ergo(cursor)"
+        include "ergo(caps_gr2)"
+        // include "ergo(tab_gr1)"
+        // include "ergo(numbers)"
+    };
+
+	  xkb_geometry  { include "pc(pc105)"	};
+};

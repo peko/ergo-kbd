@@ -1,0 +1,85 @@
+
+
+  ///////////////////////////
+ // ERGO KEYOBOARD LAYOUT //
+///////////////////////////
+
+
+// Bind CAPS to overlay switch
+partial modifier_keys
+xkb_symbols "caps_overlay1" {
+    key <CAPS> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Overlay1_Enable ],
+        type[Group2] = "ONE_LEVEL",
+        symbols[Group2] = [ Overlay1_Enable ]
+    };
+};
+
+
+// Bind TAB to overlay switch
+partial modifier_keys
+xkb_symbols "tab_overlay2" {
+    replace key <TAB> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Overlay2_Enable ],
+        type[Group2] = "ONE_LEVEL",
+        symbols[Group2] = [ Overlay2_Enable ]
+    };
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "overlay1" {
+
+    key  <AD07> { overlay1 = <HOME> };
+    key  <AD08> { overlay1 = <UP>   };
+    key  <AD09> { overlay1 = <END>  };
+
+    key  <AC06> { overlay1 = <BKSP> };
+    key  <AC07> { overlay1 = <LEFT> };
+    key  <AC08> { overlay1 = <DOWN> };
+    key  <AC09> { overlay1 = <RGHT> };
+    key  <AC10> { overlay1 = <DELE> };
+
+    key  <AB07> { overlay1 = <PGDN> };
+    key  <AB08> { overlay1 = <ESC>  };
+    key  <AB09> { overlay1 = <PGUP> };
+        
+
+    // Ctr_A Ctrl_X Ctrl_C, Ctrl_V
+    replace key <I230> { actions[Group1] = [ RedirectKey(key=<LatQ>,mods=Control) ] };
+    replace key <I231> { actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] };
+    replace key <I232> { actions[Group1] = [ RedirectKey(key=<LatS>,mods=Control) ] };
+
+    replace key <I233> { actions[Group1] = [ RedirectKey(key=<LatX>,mods=Control) ] };
+    replace key <I234> { actions[Group1] = [ RedirectKey(key=<LatV>,mods=Control) ] };
+    replace key <I235> { actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] };
+    replace key <I236> { actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] };
+
+
+    key <AD01> { overlay1 = <I230> }; // Ctrl + Q 
+   
+    key <AC01> { overlay1 = <I231> }; // Ctrl + A
+    key <AC02> { overlay1 = <I232> }; // Ctrl + S
+
+    key <AB01> { overlay1 = <I234> }; // Ctrl + Z
+    key <AB02> { overlay1 = <I231> }; // Ctrl + X
+    key <AB03> { overlay1 = <I232> }; // Ctrl + C
+    key <AB04> { overlay1 = <I233> }; // Ctrl + V
+    
+    key <AD01> { overlay1 = <I235> }; // Ctrl + Q
+ 
+    key <SPCE> { overlay1 = <TAB> }; // " "
+};
+
+
+partial modifier_keys
+xkb_symbols "altgr" {
+  replace key <LVL3> {
+       type[Group1]="ONE_LEVEL",
+       symbols[Group1]=[ ISO_Level3_Shift ]
+   };
+   modifier_map Mod5 { <LVL3> };
+};
+
