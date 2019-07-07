@@ -13,6 +13,11 @@ xkb_keymap {
 
       include "workman(us)"           // layout
       include "workman(ru):2"         // second
+      
+      key <RALT> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ]
+      };
 
       include "ergo(altgr)"           // altgr for switch
       include "group(shifts_toggle)"  // switch

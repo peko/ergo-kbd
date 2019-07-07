@@ -116,41 +116,51 @@ xkb_symbols "ergo" {
 
     name[Group1]= "Ergo";
 
-    // key <AD01> {  [   q,  Q   ] };
-    // key <AD02> {  [   d,  D   ] };
-    // key <AD03> {  [   r,  R   ] };
-    // key <AD04> {  [   w,  W   ] };
-    // key <AD05> {  [   b,  B   ] };
-    // key <AD06> {  [   j,  J   ] };
-    key <AD07> {  [ Home ] };
-    key <AD08> {  [ Up   ] };
-    key <AD09> {  [ End  ] };
+    // key <AD01> { [ q, Q ] };
+    // key <AD02> { [ d, D ] };
+    // key <AD03> { [ r, R ] };
+    // key <AD04> { [ w, W ] };
+    // key <AD05> { [ b, B ] };
+    // key <AD06> { [ j, J ] };
+    key <AD07> { [ Home ] };
+    key <AD08> { [ Up   ] };
+    key <AD09> { [ End  ] };
     // key <AD10> {  [   semicolon,  colon   ] };
 
-    key <AC01> {  [        a,        A ], actions[Group1]=[ RedirectKey(key=<LatA>, mods=Control)             ]};
-    key <AC02> {  [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Shift  ), SetMods(mods=Shift        )]};
-    key <AC03> {  [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Alt    ), SetMods(mods=Shift+Alt    )]};
-    key <AC04> {  [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Control), SetMods(mods=Shift+Control)]};
+    key <AC01> { [        a,        A ], actions[Group1]=[ RedirectKey(key=<LatA>, mods=Control)             ]};
+    key <AC02> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Shift  ), SetMods(mods=Shift        )]};
+    key <AC03> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Alt    ), SetMods(mods=Shift+Alt    )]};
+    key <AC04> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Control), SetMods(mods=Shift+Control)]};
     // key <AC05> {  [   g,  G   ] };
-    key <AC06> {  [ BackSpace ] };
-    key <AC07> {  [ Left      ] };
-    key <AC08> {  [ Down      ] };
-    key <AC09> {  [ Right     ] };
-    key <AC10> {  [ Delete    ] };
+    key <AC06> { [ BackSpace ] };
+    key <AC07> { [ Left      ] };
+    key <AC08> { [ Down      ] };
+    key <AC09> { [ Right     ] };
+    key <AC10> { [ Delete    ] };
 
     key <AB01> { [z, Z], actions[Group1]=[ RedirectKey(key=<LatZ>, mods=Control) ] };
     key <AB02> { [x, X], actions[Group1]=[ RedirectKey(key=<LatX>, mods=Control) ] };
     key <AB03> { [c, C], actions[Group1]=[ RedirectKey(key=<LatC>, mods=Control) ] };
     key <AB04> { [v, V], actions[Group1]=[ RedirectKey(key=<LatV>, mods=Control) ] };
-    // key <AB05> {  [   v,  V   ] };
-    // key <AB06> {  [   k,  K   ] };
-    // key <AB07> {  [   l,  L   ] };
+    // key <AB05> { [ v, V ] };
+    // key <AB06> { [ k, K ] };
+    // key <AB07> { [ l, L ] };
     key <AB08> {  [ Escape ] };
-
-    // key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
 
 };
 
+// partial alphanumeric_keys
+// xkb_symbols "mouse" {
+//     key <AC07> { actions[Group1]=[MovePtr(x=-8,y=+0)] };
+//     key <AC08> { actions[Group1]=[MovePtr(x= 0,y=+8)] };
+//     key <AC09> { actions[Group1]=[MovePtr(x=+8,y=+0)] };
+// }
+
 partial modifier_keys
-xkb_symbols "caps" {
+xkb_symbols "altgr" {
+replace key <LVL3> {
+     type[Group1]="ONE_LEVEL",
+     symbols[Group1]=[ ISO_Level3_Shift ]
+ };
+ modifier_map Mod5 { <LVL3> };
 };

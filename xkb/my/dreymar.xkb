@@ -14,13 +14,20 @@ xkb_keymap {
     interpret Third_Group {
        action= LockGroup(group=3);
     };
+
+    interpret Fourth_Group {
+       action= LockGroup(group=4);
+    };
+
   };
 
   xkb_symbols {
     include "pc"
     include "workman(us)"
     include "workman(ru):2"
+    include "workman(altgr)"
     include "workman(ergo):3"
+    // include "workman(mouse):4"
 
     replace key <CAPS> { 
       [ NoSymbol, NoSymbol], 
