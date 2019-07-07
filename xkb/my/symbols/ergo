@@ -57,11 +57,12 @@ xkb_symbols "overlay1" {
     replace key <I235> { actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] };
     replace key <I236> { actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] };
 
-
     key <AD01> { overlay1 = <I230> }; // Ctrl + Q 
    
     key <AC01> { overlay1 = <I231> }; // Ctrl + A
-    key <AC02> { overlay1 = <I232> }; // Ctrl + S
+    key <AC02> { overlay1 = <LALT> };
+    key <AC03> { overlay1 = <LCTL> };
+    key <AC04> { overlay1 = <LFSH> };
 
     key <AB01> { overlay1 = <I234> }; // Ctrl + Z
     key <AB02> { overlay1 = <I231> }; // Ctrl + X
