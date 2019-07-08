@@ -64,12 +64,12 @@ xkb_symbols "overlay1" {
     key <AC03> { overlay1 = <LCTL> };
     key <AC04> { overlay1 = <LFSH> };
 
-    key <AB01> { overlay1 = <I234> }; // Ctrl + Z
-    key <AB02> { overlay1 = <I231> }; // Ctrl + X
-    key <AB03> { overlay1 = <I232> }; // Ctrl + C
-    key <AB04> { overlay1 = <I233> }; // Ctrl + V
+    key <AB01> { overlay1 = <I236> }; // Ctrl + Z
+    key <AB02> { overlay1 = <I233> }; // Ctrl + X
+    key <AB03> { overlay1 = <I234> }; // Ctrl + C
+    key <AB04> { overlay1 = <I235> }; // Ctrl + V
     
-    key <AD01> { overlay1 = <I235> }; // Ctrl + Q
+    key <AD01> { overlay1 = <I230> }; // Ctrl + Q
  
     key <SPCE> { overlay1 = <TAB> }; // " "
 };
