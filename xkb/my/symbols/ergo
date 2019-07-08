@@ -31,7 +31,8 @@ xkb_symbols "tab_overlay2" {
 
 partial alphanumeric_keys
 xkb_symbols "overlay1" {
-
+    
+    // RIGHT SIDE
     key  <AD07> { overlay1 = <HOME> };
     key  <AD08> { overlay1 = <UP>   };
     key  <AD09> { overlay1 = <END>  };
@@ -45,33 +46,23 @@ xkb_symbols "overlay1" {
     key  <AB07> { overlay1 = <PGDN> };
     key  <AB08> { overlay1 = <ESC>  };
     key  <AB09> { overlay1 = <PGUP> };
-        
+    
+    // LEFT SIDE
 
-    // Ctr_A Ctrl_X Ctrl_C, Ctrl_V
-    replace key <I230> { actions[Group1] = [ RedirectKey(key=<LatQ>,mods=Control) ] };
-    replace key <I231> { actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] };
-    replace key <I232> { actions[Group1] = [ RedirectKey(key=<LatS>,mods=Control) ] };
-
-    replace key <I233> { actions[Group1] = [ RedirectKey(key=<LatX>,mods=Control) ] };
-    replace key <I234> { actions[Group1] = [ RedirectKey(key=<LatV>,mods=Control) ] };
-    replace key <I235> { actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] };
-    replace key <I236> { actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] };
-
-    key <AD01> { overlay1 = <I230> }; // Ctrl + Q 
-   
-    key <AC01> { overlay1 = <I231> }; // Ctrl + A
+    key <AD01> { overlay1 = <ESC> }; 
+    replace key <I153> { [d,D], actions[Group1] = [ RedirectKey(key=<LatW>,mods=Control) ] }; key <AD02> { overlay1 = <I153> }; // Ctrl + D
+ 
+    replace key <I154> { [a,A], actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] }; key <AC01> { overlay1 = <I154> }; // Ctrl + A
     key <AC02> { overlay1 = <LALT> };
     key <AC03> { overlay1 = <LCTL> };
     key <AC04> { overlay1 = <LFSH> };
 
-    key <AB01> { overlay1 = <I236> }; // Ctrl + Z
-    key <AB02> { overlay1 = <I233> }; // Ctrl + X
-    key <AB03> { overlay1 = <I234> }; // Ctrl + C
-    key <AB04> { overlay1 = <I235> }; // Ctrl + V
-    
-    key <AD01> { overlay1 = <I230> }; // Ctrl + Q
+    replace key <I156> { [z,Z], actions[Group1] = [ RedirectKey(key=<LatZ>,mods=Control) ] }; key <AB01> { overlay1 = <I156> }; // Ctrl + Z
+    replace key <I157> { [x,X], actions[Group1] = [ RedirectKey(key=<LatX>,mods=Control) ] }; key <AB02> { overlay1 = <I157> }; // Ctrl + X
+    replace key <I158> { [c,C], actions[Group1] = [ RedirectKey(key=<LatV>,mods=Control) ] }; key <AB03> { overlay1 = <I158> }; // Ctrl + C
+    replace key <I159> { [v,V], actions[Group1] = [ RedirectKey(key=<LatB>,mods=Control) ] }; key <AB04> { overlay1 = <I159> }; // Ctrl + V   
  
-    key <SPCE> { overlay1 = <TAB> }; // " "
+    key <SPCE> { overlay1 = <TAB> };
 };
 
 
