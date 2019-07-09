@@ -24,6 +24,8 @@ xkb_keymap {
 
       include "ergo(overlay1)"        // keys binding
       include "ergo(caps_overlay1)"   // switch key
+
+      include "ergo(ban_old_habbits)"
   };
 
   XKB_geometry{include "pc(pc105)"};

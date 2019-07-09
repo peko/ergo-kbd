@@ -37,19 +37,19 @@ xkb_symbols "overlay1" {
     key  <AD08> { overlay1 = <UP>   };
     key  <AD09> { overlay1 = <END>  };
 
-    key  <AC06> { overlay1 = <BKSP> };
+    replace key <I150> { [BackSpace, BackSpace] }; key <AC06> { overlay1 = <I150> };
     key  <AC07> { overlay1 = <LEFT> };
     key  <AC08> { overlay1 = <DOWN> };
     key  <AC09> { overlay1 = <RGHT> };
     key  <AC10> { overlay1 = <DELE> };
 
     key  <AB07> { overlay1 = <PGDN> };
-    key  <AB08> { overlay1 = <ESC>  };
+    replace key <I151> { [Escape, Escape] }; key <AC08> { overlay1 = <I151> };
     key  <AB09> { overlay1 = <PGUP> };
     
     // LEFT SIDE
 
-    key <AD01> { overlay1 = <ESC> }; 
+    replace key <I152> { [Escape,Escape] }; key <AD01> { overlay1 = <I152> }; 
     replace key <I153> { [d,D], actions[Group1] = [ RedirectKey(key=<LatW>,mods=Control) ] }; key <AD02> { overlay1 = <I153> }; // Ctrl + D
  
     replace key <I154> { [a,A], actions[Group1] = [ RedirectKey(key=<LatA>,mods=Control) ] }; key <AC01> { overlay1 = <I154> }; // Ctrl + A
@@ -65,6 +65,11 @@ xkb_symbols "overlay1" {
     key <SPCE> { overlay1 = <TAB> };
 };
 
+partial alphanumeric_keys
+xkb_symbols "ban_old_habbits" {
+    replace key <BKSP> {[NoSymbol]};
+    replace key <ESC> {[NoSymbol]};
+};
 
 partial modifier_keys
 xkb_symbols "altgr" {
