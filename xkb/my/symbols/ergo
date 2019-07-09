@@ -47,7 +47,7 @@ xkb_symbols "overlay1" {
     key  <AC10> { overlay1 = <DELE> };
 
     key  <AB07> { overlay1 = <PGDN> };
-    key  <AC08> { overlay1 = <UP>   };
+    key  <AB08> { overlay1 = <I151> };
     key  <AB09> { overlay1 = <PGUP> };
     
     // LEFT SIDE
