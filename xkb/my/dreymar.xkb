@@ -27,23 +27,30 @@ xkb_keymap {
     include "workman(ru):2"
     include "workman(altgr)"
     include "workman(ergo):3"
-    // include "workman(mouse):4"
+    include "workman(symbols):4"
 
     replace key <CAPS> { 
-      [ NoSymbol, NoSymbol], 
+      [ NoSymbol], 
       actions[Group1]=[SetGroup(group=3)],
       actions[Group2]=[SetGroup(group=2)]
     };
 
-    key <RTSH> { [Shift_R], 
-      actions[Group1]=[NoAction(), LockGroup(group=2)],
-      actions[Group2]=[NoAction(), LockGroup(group=1)]
+    replace key <TAB> { 
+      [ NoSymbol], 
+      actions[Group1]=[SetGroup(group=4)],
+      actions[Group2]=[SetGroup(group=3)]
+    };
+
+    key <RTSH> { 
+      [Shift_R, Shift_R], 
+      actions[Group1]=[SetMods(mods=Shift), LockGroup(group=2)],
+      actions[Group2]=[SetMods(mods=Shift), LockGroup(group=1)]
     };
 
   };
 
   XKB_geometry {
-    include "pc(pc101)"
+    include "pc(pc104)"
   };
 
 };
