@@ -47,6 +47,9 @@ xkb_keymap {
       actions[Group2]=[SetMods(mods=Shift), LockGroup(group=1)]
     };
 
+    replace key <BKSP> {[NoSymbol]};
+    replace key <ESC> {[NoSymbol]};
+
   };
 
   XKB_geometry {
