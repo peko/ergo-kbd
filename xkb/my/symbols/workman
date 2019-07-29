@@ -13,11 +13,13 @@ xkb_symbols "us" {
     key <AD03> {[ r, R ]};
     key <AD04> {[ w, W ]};
     key <AD05> {[ b, B ]};
-    key <AD06> {[ j, J ]};
+    key <AD06> {[ NoSymbol, NoSymbol ]};
     key <AD07> {[ f, F ]};
     key <AD08> {[ u, U ]};
     key <AD09> {[ p, P ]};
-    key <AD10> {[ semicolon, colon ] };
+    key <AD10> {[ j, J ]};
+    key <AD11> {[ less, J ]};
+    key <AD12> {[ greater, J ]};
 
     key <AC01> {[ a, A ]};
     key <AC02> {[ s, S ]};
@@ -29,14 +31,23 @@ xkb_symbols "us" {
     key <AC08> {[ e, E ]};
     key <AC09> {[ o, O ]};
     key <AC10> {[ i, I ]};
+    key <AC11> {[ Return, Return ]};
 
     key <AB01> {[ z, Z ]};
     key <AB02> {[ x, X ]};
-    key <AB03> {[ m, M ]};
-    key <AB04> {[ c, C ]};
-    key <AB05> {[ v, V ]};
+    key <AB03> {[ c, C ]};
+    key <AB04> {[ v, V ]};
+    key <AB05> {[ slash, question ]};
     key <AB06> {[ k, K ]};
     key <AB07> {[ l, L ]};
+    key <AB08> {[ m, M ]};
+    key <AB09> {[ comma, period ]};
+    key <AB10> {[ semicolon, colon ]};
+    
+};
+
+partial alphanumeric_keys 
+xkb_symbols "planck_40"  {
 
 };
 
@@ -91,7 +102,9 @@ xkb_symbols "us_wide" {
 // Russian phonetic variant for workman layout
 partial default alphanumeric_keys
 xkb_symbols "ru" {
+
     include "workman(us)"
+
     name[Group1]= "Russian (Workman)";
 
     key.type[group1]="TWO_LEVEL";
@@ -143,9 +156,20 @@ xkb_symbols "ru" {
     key <AC10> { [ NoSymbol, NoSymbol, Cyrillic_shorti  , Cyrillic_SHORTI   ] }; // i
     key <AB03> { [ NoSymbol, NoSymbol, Cyrillic_softsign, Cyrillic_SOFTSIGN ] }; // m
 
-    include "level3(ralt_switch)"
+    include "workman(altgr)"
 };
 
+
+partial modifier_keys
+xkb_symbols "altgr" {
+  replace key <RALT> {
+       type[Group1]="ONE_LEVEL",
+       symbols[Group1]=[ ISO_Level3_Shift ],
+       type[Group2]="ONE_LEVEL",
+       symbols[Group2]=[ ISO_Level3_Shift ]
+   };
+   modifier_map Mod5 { <RALT> };
+};
 
 partial modifier_keys 
 xkb_symbols "ctl" {
