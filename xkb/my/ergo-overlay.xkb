@@ -6,27 +6,28 @@ xkb_keymap {
   xkb_compat{
       include "complete" 
       include "ergo(overlay1)"
+     
+      // interpret ISO_Level6_Shift {
+      //   action= SetMods(modifiers=LevelSix);
+      // };
+
   };
 
   xkb_symbols{
       include "pc"
 
-      include "workman(us)"           // layout
-      include "workman(ru):2"         // second
-      
-      key <RALT> {
-        type[Group1]="ONE_LEVEL",
-        symbols[Group1] = [ ISO_Level3_Shift ]
-      };
+      // include "workman(us)"        // layout
+      include "us(workman)"           // layout
+      include "workman(ru):2"         // second      
 
-      include "ergo(altgr)"           // altgr for switch
       include "group(shifts_toggle)"  // switch
 
       include "ergo(overlay1)"        // keys binding
-      include "ergo(caps_overlay1)"   // switch key
-
-      include "ergo(ban_old_habbits)"
-      // include "workman(ctl)"
+      include "ergo(caps_overlay1)"   // keys binding
+      // include "ergo(tab_escape)"      // keys binding
+      
+      // include "planck(numbers)"
+      // include "planck(bksl_switch)"
   };
 
   XKB_geometry{include "pc(pc105)"};
