@@ -1,5 +1,6 @@
 // PLANCK 40%
 
+// QWERTY
 
 // TAB  Q  W  E  R  T    Y  U  I  O  P  {  }  |
 // CAPS  A  S  D  F  G    H  J  K  L  :  "  RET
@@ -10,11 +11,22 @@
 // shift  z  x  c  v  b    n  m  ,  .  /  shift
 
 
+// KEY CODES
+
 // tl  1  2  3  4  5   6   7  8  9  0  1  2  bs  AE   
 // tab  1  2  3  4  5    6  7  8  9  0  1  2  B  AD
 // caps  1  2  3  4  5    6  7  8  9  0  1  ret  AC
 // shift  1  2  3  4  5    6  7  8  9  0  shift  AB
 
+
+// EMPTY TEMPLATE
+
+// tab  .  .  .  .  .    .  .  .  .  .  .  .  .
+// caps  .  .  .  .  .    .  .  .  .  .  .  ret
+// shift  .  .  .  .  .    .  .  .  .  .  shift
+
+
+// WORKMAN
 
 // TAB  Q  D  R  W  B    J  F  U  P  :  {  }  |
 // CAPS  A  S  H  T  G    Y  N  E  O  I  "  RET
@@ -24,18 +36,50 @@
 // caps  a  s  h  t  g    y  n  e  o  i  '  ret
 // shift  z  x  m  c  v    k  l  ,  .  /  shift
 
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ∙  ∙
+// caps  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ret
+// shift  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  shift
+
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ⇤  ↑  ⇥  ∙  ∙  ∙  ∙
+// caps  ∙  ∙  ∙  ∙  ∙    ↟  ←  ↓  →  ∙  ∙  ret
+// shift  ∙  ∙  ∙  ∙  ∙    ↡  ↚  ∙  ↛  ∙  shift
+
+// tab  7  8  9  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ∙  ∙
+// caps  4  5  6  0  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ret
+// shift  1  2  3  ∙  ∙    ∙  ∙  ∙  ∙  ∙  shift
+
+
+// WORKMAN WIDE
+
+// LV2  Q  D  R  W  B    ∙  ∙    F  U  P  J  ∙  L4 
+// LEV1  A  S  H  T  G    ∙    Y  N  E  O  I  LEV3
+// SHIFT  Z  X  C  V    ∙  ∙   K  L  M  >   SHIIFT
+
+// LV2  q  d  r  w  b    .  .    f  u  p  j  .  L4
+// LEV1  a  s  h  t  g    .    y  n  e  o  i  LEV2
+// shift  z  x  c  v    .  .    k  l  m  .  SHIIFT
+
+
 // 1 2 3 4 5 6 7 8 9 0
 // ! @ # $ % ^ & * ( ) - = _ + 
 // { } [ ] ; : \ | ' " 
-// , . < > / ? ` ~ 
+// , . < > / ? ` ~
+// tab space ret esc
 
-// tab  .  .  .  .  .    .  .  .  .  .  .  .  .
-// caps  .  .  .  .  .    .  .  .  .  .  .  ret
-// shift  .  .  .  .  .    .  .  .  .  .  shift
 
-// tab  7  8  9  -  .    .  .  {  }  .  .  .  .
-// caps  4  5  6  0  .    .  (  )  [  ]  .  ret
-// shift  1  2  3  +  =    _  =  <  >  .  shift
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    7  8  9  ∙  ∙  ∙  |  tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙    
+// ####  ∙  ∙  ∙  ∙  ∙    ∙    ∙  4  5  6  ∙  ret  |  caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ### 
+// shift  ∙  ∙  ∙  ∙    ∙  ∙    0  1  2  3  shift  |  shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift
+
+// ###  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  |  tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  #
+// caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ret  |  caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ret
+// shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift  |  shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift
+
+
+// □□□  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ⇤  ↑  ⇥  ↰  ∙  □
+// ■■■■  A  al st ct      ∙    ↟  ←  ↓  →  ↲  □□□
+// □□□□□  ^Z ^X ^C ^V   ∙  ∙    ↡  ↚  ∙  ↛  □□□□□
+ 
 
 partial alphanumeric_keys
 xkb_symbols "numbers" {
