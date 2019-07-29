@@ -1,7 +1,4 @@
 
-// Workman Keyboard Layout symbols for xkb on X.Org Server 7.x
-// 09-06-2010 OJ Bucao. http://www.workmanlayout.com
-
 partial alphanumeric_keys
 xkb_symbols "us" {
 
@@ -42,6 +39,7 @@ xkb_symbols "us" {
     key <AB07> {[ l, L ]};
 
 };
+
 
 partial alphanumeric_keys
 xkb_symbols "us_wide" {
@@ -88,6 +86,7 @@ xkb_symbols "us_wide" {
     key <AB10> {[ comma, period ] };
 
 };
+
 
 // Russian phonetic variant for workman layout
 partial default alphanumeric_keys
@@ -147,6 +146,7 @@ xkb_symbols "ru" {
     include "level3(ralt_switch)"
 };
 
+
 partial modifier_keys 
 xkb_symbols "ctl" {
       virtual_modifiers LControl;
@@ -158,6 +158,7 @@ xkb_symbols "ctl" {
       };
       modifier_map Control { <LCTL> };
 };
+
 
 partial alphanumeric_keys
 xkb_symbols "ergo" {
@@ -197,12 +198,6 @@ xkb_symbols "ergo" {
     key <SPCE> { [Tab] };
 };
 
-// partial alphanumeric_keys
-// xkb_symbols "mouse" {
-//     key <AC07> { actions[Group1]=[MovePtr(x=-8,y=+0)] };
-//     key <AC08> { actions[Group1]=[MovePtr(x= 0,y=+8)] };
-//     key <AC09> { actions[Group1]=[MovePtr(x=+8,y=+0)] };
-// }
 
 partial alphanumeric_keys
 xkb_symbols "symbols" {
