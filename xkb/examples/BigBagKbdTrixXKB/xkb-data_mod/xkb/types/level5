@@ -177,21 +177,21 @@ partial default xkb_types "default" {
 
     type "EIGHT_LEVEL_SEMIALPHABETIC" {
 	modifiers = Shift+Lock+LevelThree+LevelFive;
-	map[None] = Level1;
-	map[Shift] = Level2;
-	map[Lock]  = Level2;
-	map[LevelThree] = Level3;
-	map[Shift+LevelThree] = Level4;
-	map[Lock+LevelThree] =  Level3;
+	map[None]                  = Level1;
+	map[Shift]                 = Level2;
+	map[Lock]                  = Level2;
+	map[LevelThree]            = Level3;
+	map[Shift+LevelThree]      = Level4;
+	map[Lock+LevelThree]       = Level3;
 	map[Lock+Shift+LevelThree] = Level4;
 
-	map[LevelFive] = Level5;
-	map[Shift+LevelFive] = Level6;
-	map[Lock+LevelFive]  = Level6;
-	map[Lock+Shift+LevelFive]  = Level6;
-	map[LevelThree+LevelFive] = Level7;
-	map[Shift+LevelThree+LevelFive] = Level8;
-	map[Lock+LevelThree+LevelFive] =  Level7;
+	map[LevelFive]                       = Level5;
+	map[Shift+LevelFive]                 = Level6;
+	map[Lock+LevelFive]                  = Level6;
+	map[Lock+Shift+LevelFive]            = Level6;
+	map[LevelThree+LevelFive]            = Level7;
+	map[Shift+LevelThree+LevelFive]      = Level8;
+	map[Lock+LevelThree+LevelFive]       = Level7;
 	map[Lock+Shift+LevelThree+LevelFive] = Level8;
 
 // --> OEystein Bech "DreymaR" Gadmar, 2015-09: Additions to xkb/types/level5

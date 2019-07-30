@@ -19,6 +19,10 @@ for level in levels
       layout[key_name]?=[]
       layout[key_name].push symbol
 
-keys = ("key <#{k}> {[ #{v.join(', ')} ]};" for k, v of layout).join("\n")
-console.log keys
-  
+keys = ("  key <#{k}> {[ #{v.join(', ')} ]};" for k, v of layout).join("\n")
+symbols = """
+  partial alphanumeric_keys modifier_keys
+  xkb_symbols "lv5" {
+  #{keys}
+  };"""
+console.log symbols
