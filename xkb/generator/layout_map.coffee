@@ -12,8 +12,13 @@ cyr_symbols = "ёйцукенжшщзхъфывапролджеячсмитьб�
 for s, i in  cyr_symbols
   cyr[s] = "Cyrillic_#{cyr_names[i]}"
   Cyr[s.toUpperCase()] = "Cyrillic_#{cyr_names[i].toUpperCase()}"
-  
+
 module.exports =
+  key_names: [
+    ["TAB" , keys("AD",12)..., "BKSL"]   # tab  1  2  3  4  5  6  7  8  9  0  1  2  3
+    ["CAPS", keys("AC",11)..., "RTRN"]   # caps  1  2  3  4  5  6  7  8  9  0  1  ret
+    ["LFSH", keys("AB",10)..., "RTSH"]]  # shift  1  2  3  4  5  6  7  8  9  0  shift
+
   symbols: {
   
     symbols("0123456789")...
@@ -22,9 +27,17 @@ module.exports =
     cyr...
     Cyr...
 
+    "tb": "Tab"
+    "sr": "Shift_R"
+    "sl": "Shift_L"
+    
     "sp": "space"
     "tb": "Tab"
     "rt": "Return"
+    
+    "al": "Meta"
+    "st": "Shift"
+    "ct": "Control"
      
     "`": "grave"
     "~": "asciitilde"
@@ -72,8 +85,3 @@ module.exports =
     "↚": "Delete"
     "↛": "BackSpace"
   }
-
-  key_names: [
-    ["TAB" , keys("AD",12)..., "BKSL"]
-    ["CAPS", keys("AC",11)..., "RTRN"]
-    ["LFSH", keys("AB",10)..., "RTSH"]]
