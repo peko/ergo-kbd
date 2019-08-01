@@ -27,6 +27,8 @@ module.exports =
     cyr...
     Cyr...
 
+    "cp": "Caps_Lock"
+    "bs": "BackSpace"
     "tb": "Tab"
     "sr": "Shift_R"
     "sl": "Shift_L"
