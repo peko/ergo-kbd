@@ -5,12 +5,7 @@ xkb_keymap {
   
   xkb_compat{
       include "complete" 
-      include "ergo(overlay1)"
-     
-      // interpret ISO_Level6_Shift {
-      //   action= SetMods(modifiers=LevelSix);
-      // };
-
+      include "ergo(overlay1)"    
   };
 
   xkb_symbols{
@@ -24,10 +19,6 @@ xkb_keymap {
 
       include "ergo(overlay1)"        // keys binding
       include "ergo(caps_overlay1)"   // keys binding
-      // include "ergo(tab_escape)"      // keys binding
-      
-      // include "planck(numbers)"
-      // include "planck(bksl_switch)"
   };
 
   XKB_geometry{include "pc(pc105)"};

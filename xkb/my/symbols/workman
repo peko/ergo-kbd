@@ -49,9 +49,95 @@ xkb_symbols "us" {
 partial alphanumeric_keys 
 xkb_symbols "planck_40"  {
 
+    include "level5"
+    key.type[group1]="EIGHT_LEVEL";
+
+    key <AD01> {[ q         , Q         , NoSymbol, NoSymbol, 0           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD02> {[ d         , D         , NoSymbol, NoSymbol, 1           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD03> {[ r         , R         , NoSymbol, NoSymbol, 2           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD04> {[ w         , W         , NoSymbol, NoSymbol, 3           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD05> {[ b         , B         , NoSymbol, NoSymbol, 4           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD06> {[ minus     , underscore, NoSymbol, NoSymbol, asciitilde  , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD07> {[ f         , F         , NoSymbol, NoSymbol, bracketleft , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD08> {[ u         , U         , NoSymbol, NoSymbol, bracketright, NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD09> {[ p         , P         , NoSymbol, NoSymbol, braceleft   , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD10> {[ j         , J         , NoSymbol, NoSymbol, braceright  , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD11> {[ apostrophe, quotedbl  , NoSymbol, NoSymbol, grave       , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AD12> {[ slash     , backslash , NoSymbol, NoSymbol, bar         , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC01> {[ a         , A         , NoSymbol, NoSymbol, 5           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC02> {[ s         , S         , NoSymbol, NoSymbol, 6           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC03> {[ h         , H         , NoSymbol, NoSymbol, 7           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC04> {[ t         , T         , NoSymbol, NoSymbol, 8           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC05> {[ g         , G         , NoSymbol, NoSymbol, 9           , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC06> {[ y         , Y         , NoSymbol, NoSymbol, plus        , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC07> {[ n         , N         , NoSymbol, NoSymbol, parenleft   , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC08> {[ e         , E         , NoSymbol, NoSymbol, parenright  , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC09> {[ o         , O         , NoSymbol, NoSymbol, less        , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC10> {[ i         , I         , NoSymbol, NoSymbol, greater     , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AC11> {[ semicolon , colon     , NoSymbol, NoSymbol, asciicircum , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB01> {[ z         , Z         , NoSymbol, NoSymbol, at          , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB02> {[ x         , X         , NoSymbol, NoSymbol, numbersign  , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB03> {[ c         , C         , NoSymbol, NoSymbol, dollar      , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB04> {[ v         , V         , NoSymbol, NoSymbol, percent     , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB05> {[ slash     , backslash , NoSymbol, NoSymbol, ampersand   , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB06> {[ k         , K         , NoSymbol, NoSymbol, asterisk    , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB07> {[ l         , L         , NoSymbol, NoSymbol, NoSymbol    , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB08> {[ m         , M         , NoSymbol, NoSymbol, NoSymbol    , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB09> {[ comma     , period    , NoSymbol, NoSymbol, NoSymbol    , NoSymbol, NoSymbol, NoSymbol ]};
+    key <AB10> {[ space     , Tab       , NoSymbol, NoSymbol, NoSymbol    , NoSymbol, NoSymbol, NoSymbol ]};
+
+    key.type[Group1] = "ONE_LEVEL";
+    key <SPCE> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=LevelFive)] };
 };
 
 
+partial alphanumeric_keys 
+xkb_symbols "planck_40_ru"  {
+
+    include "level5"
+    key.type[group1]="EIGHT_LEVEL";
+
+    key <AD01> {[ Cyrillic_ya  , Cyrillic_YA  , NoSymbol         , NoSymbol         , 0           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD02> {[ Cyrillic_de  , Cyrillic_DE  , NoSymbol         , NoSymbol         , 1           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD03> {[ Cyrillic_er  , Cyrillic_ER  , NoSymbol         , NoSymbol         , 2           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD04> {[ Cyrillic_ve  , Cyrillic_VE  , NoSymbol         , NoSymbol         , 3           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD05> {[ Cyrillic_be  , Cyrillic_BE  , NoSymbol         , NoSymbol         , 4           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD06> {[ minus        , underscore   , NoSymbol         , NoSymbol         , asciitilde  , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD07> {[ Cyrillic_ef  , Cyrillic_EF  , NoSymbol         , NoSymbol         , bracketleft , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD08> {[ Cyrillic_u   , Cyrillic_U   , NoSymbol         , NoSymbol         , bracketright, NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD09> {[ Cyrillic_pe  , Cyrillic_PE  , NoSymbol         , NoSymbol         , braceleft   , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD10> {[ Cyrillic_zhe , Cyrillic_ZHE , NoSymbol         , NoSymbol         , braceright  , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD11> {[ apostrophe   , quotedbl     , NoSymbol         , NoSymbol         , grave       , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AD12> {[ Escape       , Escape       , NoSymbol         , NoSymbol         , bar         , NoSymbol , NoSymbol , NoSymbol ]};
+    key <BKSL> {[ backslash    , backslash    , backslash        , backslash        , backslash   , backslash, backslash, backslash ]};
+    key <CAPS> {[ Caps_Lock    , Caps_Lock    , Caps_Lock        , Caps_Lock        , Caps_Lock   , Caps_Lock, Caps_Lock, Caps_Lock ]};
+    key <AC01> {[ Cyrillic_a   , Cyrillic_A   , NoSymbol         , NoSymbol         , 5           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC02> {[ Cyrillic_es  , Cyrillic_ES  , NoSymbol         , NoSymbol         , 6           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC03> {[ Cyrillic_che , Cyrillic_CHE , Cyrillic_softsign, Cyrillic_SOFTSIGN, 7           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC04> {[ Cyrillic_te  , Cyrillic_TE  , Cyrillic_hardsign, Cyrillic_HARDSIGN, 8           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC05> {[ Cyrillic_ghe , Cyrillic_GHE , NoSymbol         , NoSymbol         , 9           , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC06> {[ Cyrillic_yeru, Cyrillic_YERU, NoSymbol         , NoSymbol         , plus        , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC07> {[ Cyrillic_en  , Cyrillic_EN  , Cyrillic_e       , Cyrillic_E       , parenleft   , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC08> {[ Cyrillic_ie  , Cyrillic_IE  , Cyrillic_io      , Cyrillic_IO      , parenright  , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC09> {[ Cyrillic_o   , Cyrillic_O   , NoSymbol         , NoSymbol         , less        , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC10> {[ Cyrillic_i   , Cyrillic_I   , Cyrillic_shorti  , Cyrillic_SHORTI  , greater     , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AC11> {[ semicolon    , colon        , NoSymbol         , NoSymbol         , asciicircum , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB01> {[ Cyrillic_ze  , Cyrillic_ZE  , NoSymbol         , NoSymbol         , at          , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB02> {[ Cyrillic_ha  , Cyrillic_HA  , NoSymbol         , NoSymbol         , numbersign  , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB03> {[ Cyrillic_tse , Cyrillic_TSE , NoSymbol         , NoSymbol         , dollar      , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB04> {[ Cyrillic_ve  , Cyrillic_VE  , NoSymbol         , NoSymbol         , percent     , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB05> {[ slash        , backslash    , NoSymbol         , NoSymbol         , ampersand   , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB06> {[ Cyrillic_ka  , Cyrillic_KA  , NoSymbol         , NoSymbol         , asterisk    , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB07> {[ Cyrillic_el  , Cyrillic_EL  , NoSymbol         , NoSymbol         , NoSymbol    , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB08> {[ Cyrillic_em  , Cyrillic_EM  , NoSymbol         , NoSymbol         , NoSymbol    , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB09> {[ comma        , period       , NoSymbol         , NoSymbol         , NoSymbol    , NoSymbol , NoSymbol , NoSymbol ]};
+    key <AB10> {[ space        , Tab          , NoSymbol         , NoSymbol         , NoSymbol    , NoSymbol , NoSymbol , NoSymbol ]};
+
+    key.type[Group1] = "ONE_LEVEL";
+    key <SPCE> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=LevelFive)] };
+
+};
+  
 partial alphanumeric_keys
 xkb_symbols "us_wide" {
 

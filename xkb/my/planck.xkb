@@ -5,31 +5,19 @@ xkb_keymap {
   
   xkb_compat{
       include "complete" 
-      include "ergo(overlay1)"
+      include "ergo(overlay1)"    
   };
 
-  xkb_symbols {
+  xkb_symbols{
       include "pc"
-
-      // include "workman(us)"        // layout
-      include "us(workman)"           // layout
-      include "workman(ru):2"         // second      
+      include "us(workman)"
+      include "workman(planck_40)"        // layout
+      include "workman(planck_40_ru):2"   // second      
 
       include "group(shifts_toggle)"  // switch
 
       include "ergo(overlay1)"        // keys binding
       include "ergo(caps_overlay1)"   // keys binding
-      
-      include "level5"
-      
-      key.type[Group1] = "EIGHT_LEVEL";
-      key <AE01> { [ 1, 2, 3, 4, 5, 6, 7, 8 ] };
-      key.type[Group1] = "ONE_LEVEL";
-      key <KP5> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=LevelFive)] };
-      key <KP6> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=Shift+LevelFive)] };
-      key <KP7> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=LevelThree+LevelFive)] };
-      key <KP8> { [ISO_Level5_Shift], actions[Group1]= [ SetMods(modifiers=Shift+LevelThree+LevelFive)] };
-
   };
 
   XKB_geometry{include "pc(pc105)"};

@@ -8,14 +8,12 @@
 partial alphanumeric_keys
 xkb_symbols "overlay1" {
 
-    replace key <I150> { [BackSpace, BackSpace] }; 
-    replace key <I151> { [Escape, Escape] }; 
     replace key <I153> { [d,D], actions[Group1] = [ Redirect(key=<LatW>,mods=Control) ] }; 
     replace key <I154> { [a,A], actions[Group1] = [ Redirect(key=<LatA>,mods=Control) ] }; 
     replace key <I156> { [z,Z], actions[Group1] = [ Redirect(key=<LatZ>,mods=Control) ] }; 
     replace key <I157> { [x,X], actions[Group1] = [ Redirect(key=<LatX>,mods=Control) ] }; 
-    replace key <I158> { [c,C], actions[Group1] = [ Redirect(key=<LatV>,mods=Control) ] }; 
-    replace key <I159> { [v,V], actions[Group1] = [ Redirect(key=<LatB>,mods=Control) ] }; 
+    replace key <I158> { [c,C], actions[Group1] = [ Redirect(key=<LatC>,mods=Control) ] }; 
+    replace key <I159> { [v,V], actions[Group1] = [ Redirect(key=<LatV>,mods=Control) ] }; 
 
 
     // RIGHT SIDE
@@ -23,16 +21,19 @@ xkb_symbols "overlay1" {
     key  <AD07> { overlay1 = <HOME> };
     key  <AD08> { overlay1 = <UP>   };
     key  <AD09> { overlay1 = <END>  };
+    key  <AD09> { overlay1 = <ESC>  };
 
-    key  <AC06> { overlay1 = <I150> };
+    key  <AC06> { overlay1 = <PGUP> };
     key  <AC07> { overlay1 = <LEFT> };
     key  <AC08> { overlay1 = <DOWN> };
     key  <AC09> { overlay1 = <RGHT> };
-    key  <AC10> { overlay1 = <DELE> };
+    key  <AC10> { overlay1 = <RTRN> };
+    key  <AC11> { overlay1 = <TAB>  };
 
-    key  <AB07> { overlay1 = <PGDN> };
-    key  <AB08> { overlay1 = <I151> };
-    key  <AB09> { overlay1 = <PGUP> };
+    key  <AB06> { overlay1 = <PGDN> };
+    key  <AB07> { overlay1 = <BKSP> };
+    key  <AB08> { overlay1 = <ESC>  };
+    key  <AB09> { overlay1 = <DELE> };
    
  
     // LEFT SIDE
@@ -64,9 +65,9 @@ xkb_symbols "tab_escape" {
 partial modifier_keys
 xkb_symbols "caps_overlay1" {
     key <CAPS> {
-        type[Group1] = "ONE_LEVEL",
+        type[Group1]    = "ONE_LEVEL",
         symbols[Group1] = [ Overlay1_Enable ],
-        type[Group2] = "ONE_LEVEL",
+        type[Group2]    = "ONE_LEVEL",
         symbols[Group2] = [ Overlay1_Enable ]
     };
 };

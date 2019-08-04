@@ -8,16 +8,16 @@ symbols = (text)->
 cyr = {}
 Cyr = {}
 cyr_names = "io shorti tse u ka ie en ghe sha shcha ze ha hardsign ef yeru ve a pe er o el de zhe e ya che es em i te softsign be yu".split " "
-cyr_symbols = "ёйцукенжшщзхъфывапролджеячсмитьбю"
+cyr_symbols = "ёйцукенгшщзхъфывапролджэячсмитьбю"
 for s, i in  cyr_symbols
   cyr[s] = "Cyrillic_#{cyr_names[i]}"
   Cyr[s.toUpperCase()] = "Cyrillic_#{cyr_names[i].toUpperCase()}"
 
 module.exports =
   key_names: [
-    ["TAB" , keys("AD",12)..., "BKSL"]   # tab  1  2  3  4  5  6  7  8  9  0  1  2  3
-    ["CAPS", keys("AC",11)..., "RTRN"]   # caps  1  2  3  4  5  6  7  8  9  0  1  ret
-    ["LFSH", keys("AB",10)..., "RTSH"]]  # shift  1  2  3  4  5  6  7  8  9  0  shift
+    keys("AD",13)   # 1  2  3  4  5    6  7  8  9  0  1  2  3
+    keys("AC",11)   #  1  2  3  4  5    6  7  8  9  0  1
+    keys("AB",10)]  #   1  2  3  4  5    6  7  8  9  0
 
   symbols: {
   
@@ -28,14 +28,15 @@ module.exports =
     Cyr...
 
     "cp": "Caps_Lock"
-    "bs": "BackSpace"
     "tb": "Tab"
     "sr": "Shift_R"
     "sl": "Shift_L"
+    "es": "Escape"
     
     "sp": "space"
     "tb": "Tab"
     "rt": "Return"
+    "bs": "backslash"
     
     "al": "Meta"
     "st": "Shift"

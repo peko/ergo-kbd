@@ -1,31 +1,31 @@
-l6   q  d  r  w  b    ∙  ∙    f  u  p  j  ;   l8
-l5    a  s  h  t  g    ∙    y  n  e  o  i     l7
-l2     z  x  c  v    ∙  ∙    k  l  m  ,       l2 
+tb   q  d  r  w  b    ∙  ∙    f  u  p  j  es  bs
+cp    a  s  h  t  g    ∙    y  n  e  o  i     rt
+sl     z  x  c  v    ∙  ∙    k  l  m  sp      sr
 -----
-l6   Q  D  R  W  B    ∙  ∙    F  U  P  J  :   l8
-l5    A  S  H  T  G    ∙    Y  N  E  O  I     l7
-l2     Z  X  C  V    ∙  ∙    K  L  M  .       l2
+tb   Q  D  R  W  B    ∙  ∙    F  U  P  J  es  bs
+cp    A  S  H  T  G    ∙    Y  N  E  O  I     rt
+sl     Z  X  C  V    ∙  ∙    K  L  M  rt      sr
 -----
-l6   7  8  9  +  -    ∙  ∙    [  ]  <  >  ∙   l8
-l5    4  5  6  0  =    ∙    ∙  (  )  {  }     l7
-l2     1  2  3  *    ∙  ∙    _  \  |  /       l2
+tb   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   bs
+cp    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     rt
+sl     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       sr
 -----
-l6   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   l8
-l5    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     l7
-l2     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       l2
+tb   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   bs
+cp    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     rt
+sl     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       sr
 -----
-l6   ^Q ∙  ∙  ∙  ∙    ∙  ∙    ⇤  ↑  ⇥  ↰  ∙   l8
-l5    ^A al st ct ∙    ∙    ↟  ←  ↓  →  ↲     l7
-l2     ^Z ^X ^C ^V   ∙  ∙    ↡  ↚  ∙  ↛       l2
+tb   7  8  9  +  *    ∙  ∙    [  ]  {  }  ^   bs
+cp    4  5  6  0  -    ∙    ~  (  )  <  >     rt
+sl     1  2  3  =    ∙  ∙    _  \  |  /       sr
 -----
-l6   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   l8
-l5    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     l7
-l2     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       l2
+tb   @  #  $  %  &    ∙  ∙    [  ]  {  }  ^   bs
+cp    '  "  `  .  ,    ∙    ~  (  )  <  >     rt
+sl     !  ?  :  ;    ∙  ∙    _  \  |  /       sr
 -----
-l6   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   l8
-l5    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     l7
-l2     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       l2
+tb   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   bs
+cp    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     rt
+sl     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       sr
 -----
-l6   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   l8
-l5    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     l7
-l2     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       l2
+tb   ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙   bs
+cp    ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙     rt
+sl     ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙       sr
