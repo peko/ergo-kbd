@@ -20,5 +20,9 @@ c::^v
 x::^x
 z::^z
 a::^a
+k::PgDn
+y::PgUp
 
+,::Esc
+Space::Tab
 #If
