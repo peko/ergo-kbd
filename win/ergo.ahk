@@ -25,4 +25,8 @@ y::PgUp
 
 ,::Esc
 Space::Tab
+
 #If
+
+
+::gitcp::git commit -am up && git push
