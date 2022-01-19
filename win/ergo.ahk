@@ -7,38 +7,27 @@ SetCapsLockState, AlwaysOff
 
 #If GetKeyState("CapsLock" , "P")
 
-n::left
-н::left
-u::up
-у::up
-e::down
-е::down
-o::right
-о::right
-t::shift
-т::shift
-h::ctrl
-ч::ctrl
-s::alt
-с::alt
 
-m::^c
-м::^c
-c::^v
-ц::^v
-x::^x
-х::^x
-z::^z
-з::^z
-a::^a
-а::^a
-k::PgDn
-к::PgDn
-y::PgUp
-ы::PgUp
+SC01E::^a    ; a
+SC01F::alt   ; s
+SC020::ctrl  ; d
+SC021::shift ; f
 
-,::Esc
-Space::Tab
+SC024::left  ; j
+SC017::up    ; i
+SC025::down  ; k
+SC026::right ; l
+
+SC02C::^z    ; z
+SC02D::^x    ; x
+SC02E::^c    ; c
+SC02F::^v    ; v
+
+SC023::PgUp  ; h
+SC031::PgDn  ; n
+
+SC033::Esc   ; ,
+SC039::Tab   ; space
 
 #If
 
