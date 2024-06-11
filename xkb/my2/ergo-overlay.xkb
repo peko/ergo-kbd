@@ -1,0 +1,32 @@
+xkb_keymap {
+
+  xkb_keycodes{include "evdev+aliases(qwerty)"};
+  xkb_types{include "complete+ergo"};
+  
+  xkb_compat{
+      include "complete"
+      include "ergo(overlay1)"
+      // include "ergo(overlay2)"
+      // include "mouse(mousekeys)"
+  };
+
+  xkb_symbols{
+      include "pc"
+
+      // include "workman(us)"        // layout
+      include "us(workman)"           // layout
+      include "workman(ru):2"         // second
+
+      include "group(shifts_toggle)"  // switch
+
+      include "ergo(overlay1)"        // keys binding
+      include "ergo(caps_overlay1)"   // keys binding
+      
+      include "ergo(space_underscore)"
+      
+      // include "ergo(overlay2)"
+      // include "ergo(tab_overlay2)"
+  };
+
+  XKB_geometry{include "pc(pc105)"};
+};
