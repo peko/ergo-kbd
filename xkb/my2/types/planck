@@ -1,0 +1,30 @@
+
+partial default xkb_types "default" {
+
+    virtual_modifiers LevelThree,ScrollLock,LevelFive;
+
+    type "EIGHT_LEVEL" {
+    	modifiers = Shift+LevelThree+LevelFive;
+    	
+      map[None]             = Level1;
+    	map[Shift]            = Level2;
+    	map[LevelThree]       = Level3;
+    	map[Shift+LevelThree] = Level4;
+    	
+      map[LevelFive]                  = Level5;
+    	map[Shift+LevelFive]            = Level6;
+    	map[LevelThree+LevelFive]       = Level7;
+    	map[Shift+LevelThree+LevelFive] = Level8;
+
+    	level_name[Level1] = "Base";
+    	level_name[Level2] = "Shift";
+    	level_name[Level3] = "Alt Base";
+    	level_name[Level4] = "Shift Alt";
+
+    	level_name[Level5] = "X";
+    	level_name[Level6] = "X Shift";
+    	level_name[Level7] = "X Alt Base";
+    	level_name[Level8] = "X Shift Alt";
+    };
+
+};

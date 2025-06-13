@@ -1,0 +1,113 @@
+partial alphanumeric_keys
+xkb_symbols "us" {
+
+    name[Group1]= "Pinky us";
+
+    include "us(basic)"
+ 
+
+    // FIRST ROW
+
+    key <AD01> {[q,Q]};
+    key <AD02> {[d,D]};
+    key <AD03> {[r,R]};
+    key <AD04> {[w,W]};
+    key <AD05> {[b,B]};
+
+    replace key <AD06> {[NoSymbol, NoSymbol]};
+    replace key <AD07> {[NoSymbol, NoSymbol]};
+
+    key <AD08> {[f,F]};
+    key <AD09> {[u,U]};
+    key <AD10> {[p,P]};
+    key <AD11> {[j,J]};
+    key <AD12> {[semicolon,colon]};
+
+    
+    // SECOND ROW
+
+    key <AC01> {[a,A]};
+    key <AC02> {[s,S]};
+    key <AC03> {[h,H]};
+    key <AC04> {[t,T]};
+    key <AC05> {[g,G]};
+
+    replace key <AC06> {[NoSymbol, NoSymbol]};
+
+    key <AC07> {[y,Y]};
+    key <AC08> {[n,N]};
+    key <AC09> {[e,E]};
+    key <AC10> {[o,O]};
+    key <AC11> {[i,I]};
+
+    
+    // THIRD ROW
+
+    key <AB01> {[z,Z]};
+    key <AB02> {[x,X]};
+    key <AB03> {[c,C]};
+    key <AB04> {[v,V]};
+
+    replace key <AB05> {[NoSymbol, NoSymbol]};
+    replace key <AB06> {[NoSymbol, NoSymbol]};
+
+    key <AB07> {[k,K]};
+    key <AB08> {[l,L]};
+    key <AB09> {[m,M]};
+    key <AB10> {[comma,period]};
+ 
+    key <SPCE> {[space,Return]};
+
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "lower" {
+
+    name[Group1]= "Pinky cursor";
+
+    key <AD08> { [ Home ] };
+    key <AD09> { [ Up   ] };
+    key <AD10> { [ End  ] };
+
+    key <AC01> { [        a,        A ], actions[Group1]=[ RedirectKey(key=<LatA>, mods=Control)             ]};
+    key <AC02> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Shift  ), SetMods(mods=Shift        )]};
+    key <AC03> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Alt    ), SetMods(mods=Shift+Alt    )]};
+    key <AC04> { [ NoSymbol, NoSymbol ], actions[Group1]=[ SetMods(mods=Control), SetMods(mods=Shift+Control)]};
+    
+    key <AC07> { [ BackSpace ] };
+    key <AC08> { [ Left      ] };
+    key <AC09> { [ Down      ] };
+    key <AC10> { [ Right     ] };
+    key <AC11> { [ Delete    ] };
+
+    // key <AB01> { [z,Z], actions[Group1]=[ RedirectKey(key=<LatZ>, mods=Control) ] };
+    // key <AB02> { [x,X], actions[Group1]=[ RedirectKey(key=<LatX>, mods=Control) ] };
+    // key <AB03> { [c,C], actions[Group1]=[ RedirectKey(key=<LatC>, mods=Control) ] };
+    // key <AB04> { [v,V], actions[Group1]=[ RedirectKey(key=<LatV>, mods=Control) ] };
+    // key <AB05> { [v,V] };
+    // key <AB06> { [k,K] };
+    // key <AB07> { [l,L] };
+    key <AB09> { [ Escape ] };
+};
+
+partial modifier_keys
+xkb_symbols "lower_switch" {
+    key <LALT> {
+        symbols[Group1] = [ Mode_switch, Multi_key ],
+        virtualMods= AltGr
+    };
+};
+
+partial alphanumeric_keys
+xkb_symbols "rise" {
+    name[Group1]= "Planck Rise";
+};
+
+partial modifier_keys
+xkb_symbols "rise_switch" {
+    key <RALT> {
+        symbols[Group1] = [ Mode_switch, Multi_key ],
+        virtualMods= AltGr
+    };
+};

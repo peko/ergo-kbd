@@ -1,0 +1,24 @@
+xkb_keymap {
+
+  xkb_keycodes{include "evdev+aliases(qwerty)"};
+  xkb_types{include "complete+ergo"};
+  
+  xkb_compat{
+      include "complete" 
+      include "ergo(overlay1)"    
+  };
+
+  xkb_symbols{
+      include "pc"
+      include "us(workman)"
+      include "workman(planck_40)"        // layout
+      include "workman(planck_40_ru):2"   // second      
+
+      include "group(shifts_toggle)"  // switch
+
+      include "ergo(overlay1)"        // keys binding
+      include "ergo(caps_overlay1)"   // keys binding
+  };
+
+  XKB_geometry{include "pc(pc105)"};
+};

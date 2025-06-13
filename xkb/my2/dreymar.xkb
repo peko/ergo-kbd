@@ -1,0 +1,59 @@
+xkb_keymap {
+
+  xkb_keycodes {
+    include "evdev+aliases(qwerty)"
+  };
+  
+  xkb_types {
+    include "complete"
+  };
+  
+  xkb_compat {
+    include "complete"
+    
+    interpret Third_Group {
+       action= LockGroup(group=3);
+    };
+
+    interpret Fourth_Group {
+       action= LockGroup(group=4);
+    };
+
+  };
+
+  xkb_symbols {
+    include "pc"
+    include "workman(us)"
+    include "workman(ru):2"
+    include "workman(altgr)"
+    include "workman(ergo):3"
+    include "workman(symbols):4"
+
+    replace key <CAPS> { 
+      [ NoSymbol], 
+      actions[Group1]=[SetGroup(group=3)],
+      actions[Group2]=[SetGroup(group=2)]
+    };
+
+    replace key <TAB> { 
+      [ NoSymbol], 
+      actions[Group1]=[SetGroup(group=4)],
+      actions[Group2]=[SetGroup(group=3)]
+    };
+
+    key <RTSH> { 
+      [Shift_R, Shift_R], 
+      actions[Group1]=[SetMods(mods=Shift), LockGroup(group=2)],
+      actions[Group2]=[SetMods(mods=Shift), LockGroup(group=1)]
+    };
+
+    replace key <BKSP> {[NoSymbol]};
+    replace key <ESC> {[NoSymbol]};
+
+  };
+
+  XKB_geometry {
+    include "pc(pc104)"
+  };
+
+};

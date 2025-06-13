@@ -1,0 +1,137 @@
+// PLANCK 40%
+
+// QWERTY
+
+// TAB  Q  W  E  R  T    Y  U  I  O  P  {  }  |
+// CAPS  A  S  D  F  G    H  J  K  L  :  "  RET
+// SHIFT  Z  X  C  V  B    N  M  <  >  ?  SHIFT
+
+// tab  q  w  e  r  t    y  u  i  o  p  [  ]  \
+// caps  a  s  d  f  g    h  j  k  l  ;  '  ret
+// shift  z  x  c  v  b    n  m  ,  .  /  shift
+
+
+// KEY CODES
+
+// tl  1  2  3  4  5   6   7  8  9  0  1  2  bs  AE   
+// tab  1  2  3  4  5    6  7  8  9  0  1  2  B  AD
+// caps  1  2  3  4  5    6  7  8  9  0  1  ret  AC
+// shift  1  2  3  4  5    6  7  8  9  0  shift  AB
+
+
+// EMPTY TEMPLATE
+
+// tab  .  .  .  .  .    .  .  .  .  .  .  .  .
+// caps  .  .  .  .  .    .  .  .  .  .  .  ret
+// shift  .  .  .  .  .    .  .  .  .  .  shift
+
+
+// WORKMAN ORIGINAL
+
+// TAB  Q  D  R  W  B    J  F  U  P  :  {  }  |
+// CAPS  A  S  H  T  G    Y  N  E  O  I  "  RET
+// SHIFT  Z  X  M  C  V    K  L  <  >  ?  SHIFT
+
+// tab  q  d  r  w  b    j  f  u  p  ;  [  ]  \
+// caps  a  s  h  t  g    y  n  e  o  i  '  ret
+// shift  z  x  m  c  v    k  l  ,  .  /  shift
+
+
+// WORKMAN 
+
+// TAB  Q  D  R  W  B    :  F  U  P  J  {  }  |
+// CAPS  A  S  H  T  G    Y  N  E  O  I  "  RET
+// SHIFT  Z  X  C  V  ?    K  L  M  <  >  SHIFT
+
+// tab  q  d  r  w  b    ;  f  u  p  j  [  ]  \
+// caps  a  s  h  t  g    y  n  e  o  i  '  ret
+// shift  z  x  c  v  /    k  l  m  ,  .  shift
+
+
+// ERGO
+
+// tab  ^Q ∙  ∙  ∙  ∙    ∙  ⇤  ↑  ⇥  ↰  ∙  ∙  ∙
+// caps  ^A al st ct ∙    ↟  ←  ↓  →  ↲  ∙  ret
+// shift  ^Z ^X ^C ^V ∙    ↡  ↚  ∙  ↛  ∙  shift
+
+
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ∙  ∙
+// caps  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ret
+// shift  ∙  ∙  ∙  ∙  ∙    ∙  ∙  ∙  ∙  ∙  shift
+
+
+// tab  7  8  9  ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ∙  ∙
+// caps  4  5  6  0  ∙    ∙  ∙  ∙  ∙  ∙  ∙  ret
+// shift  1  2  3  ∙  ∙    ∙  ∙  ∙  ∙  ∙  shift
+
+
+// WORKMAN WIDE
+
+// LV2  Q  D  R  W  B    ∙  ∙    F  U  P  J  ∙  L4 
+// LEV1  A  S  H  T  G    ∙    Y  N  E  O  I  LEV3
+// SHIFT  Z  X  C  V    ∙  ∙    K  L  M  ∙   SHIFT
+
+// LV2  q  d  r  w  b    ∙  ∙    f  u  p  j  ∙  L4
+// LEV1  a  s  h  t  g    ∙    y  n  e  o  i  LEV2
+// shift  z  x  c  v    ∙  ∙    k  l  m  ∙  SHIIFT
+
+
+// 1 2 3 4 5 6 7 8 9 0
+// @ # $ % & ^ * - = _ + ~
+// ( ) { } [ ] < > \ | / 
+// , . ; : ! ? 
+// ` ' " 
+// tab space ret esc
+
+
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    7  8  9  ∙  ∙  ∙  |  tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙    
+// caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  4  5  6  ∙  ret  |  caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ret 
+// shift  ∙  ∙  ∙  ∙    ∙  ∙    0  1  2  3  shift  |  shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift
+
+// tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙  |  tab  ∙  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  ∙  ∙
+// caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ret  |  caps  ∙  ∙  ∙  ∙  ∙    ∙    ∙  ∙  ∙  ∙  ∙  ret
+// shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift  |  shift  ∙  ∙  ∙  ∙    ∙  ∙    ∙  ∙  ∙  ∙  shift
+
+
+// □□□  ^Q ∙  ∙  ∙  ∙    ∙  ∙    ⇤  ↑  ⇥  ↰  ∙  □
+// ■■■■  ^A al st ct ∙    ∙    ↟  ←  ↓  →  ↲  □□□
+// □□□□□  ^Z ^X ^C ^V   ∙  ∙    ↡  ↚  ∙  ↛  □□□□□
+ 
+
+partial alphanumeric_keys
+xkb_symbols "numbers" {
+    
+    key.type[group1]="EIGHT_LEVEL";
+
+    key <AB01> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, exclam      ] };
+    key <AB02> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, at          ] };
+    key <AB03> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, numbersign  ] };
+
+    key <AC01> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, dollar      ] };
+    key <AC02> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, percent     ] };
+    key <AC03> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, asciicircum ] };
+    key <AC04> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, parenright  ] };
+    key <AC05> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, comma  ] };
+
+    key <AD01> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, ampersand   ] };
+    key <AD02> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, asterisk    ] };
+    key <AD03> { [NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, parenleft   ] };
+
+};
+
+partial modifier_keys
+xkb_symbols "bksl_switch" {
+  
+  key <AC11> {
+    type[Group1]="ONE_LEVEL",
+    symbols[Group1]= [ ISO_Level5_Shift ]
+  };
+  
+  key <AB10> {
+    type[Group1]="ONE_LEVEL",
+    symbols[Group1]= [ ISO_Level5_Shift ],
+    actions[Group1]= [ SetMods(modifiers=Shift+LevelFive)]
+  };
+
+  include "level5(modifier_mapping)"
+};
