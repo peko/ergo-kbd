@@ -13,7 +13,47 @@ matrix 8×15, 4 layers, 16 macros (512 B buffer). Raw HID = interface 1
 | `via definition/` | VIA definitions (USB / 2.4G) from [DenisGas/cidoo-v65-v3-via](https://github.com/DenisGas/cidoo-v65-v3-via) @ `7976aaa`, MIT |
 | `tools/` | `via_dump.py` (read-only backup), `via_write.py` (write + verify), `port_layout.py` (QK61 → V65), `viakc.py` (legacy keycode names) |
 
+| `manual/CIDOO_V65_V3_manual.pdf` | Official V3 manual (CN/EN), from cidootech.com |
+
 Firmware binary is **not** backed up: VIA cannot read flash.
+
+## Firmware availability (checked 2026-11-15)
+
+- No official V65 firmware download: cidootech.com/blogs/firmware lists only V75 Pro; the manual says to contact support.
+- [dongdevcom/V65](https://github.com/dongdevcom/V65) has a dump of the **original** V65 (Artery AT32F415, DFU `2e3c:df11`).
+  V3 is a different platform (Evision `320f:5055`; the same ID is used by unrelated boards, e.g. Kreo Hive in
+  OpenRGB issue #4831) — **do not flash V1/V2 or look-alike firmware on V3**.
+- No known DFU/bootloader procedure for V3, so a flash backup is not possible.
+
+## Manual notes (V3)
+
+- **Hold Fn + Backspace 3 s = factory reset.** This is keycode `0x5C00` (`RESET`), kept on layer 2/3 Bksp
+  like U_EE_CLR on QK61. After a reset: `tools/via_write.py … "workman layout/…v2.1.json"`.
+- **Emergency wired mode:** hold Esc while switching power on. Power switch: towards USB port = OFF.
+- Fn + Space → USB (factory layout; in v2.1 it is Fn + Del), Fn + V → 2.4G (long = pair),
+  Fn + Z/X/C → BT 1–3 (long = pair, names "CIDOO V65 V3 -1/2/3").
+- Fn + A / Fn + S = Win / Mac mode. Factory Fn `0x5f10` is "Fn1(3)": MO(1) in Win, MO(3) in Mac; Mac mode
+  appears to use layer 2 as base — in v2.1 that would be the Fn layer. WIN/MAC keys are not mapped in v2.1.
+- Hold Fn + B = battery level (number row 1…0 = 10…100 %). Fn blinks red = battery < 3.5 V, steady red = charging.
+- Backlight off after 5 min idle; BT deep sleep after 30 min. VIA works in wired and 2.4G mode (matching JSON).
+
+## Hardware: V65 V3 vs QK61 V2
+
+| | V65 V3 | QK61 V2 |
+|---|---|---|
+| Layout | 65% ANSI, 64 keys + knob | 60%, 61 keys |
+| Case | CNC aluminium, anodized | not stated in sources |
+| Mount / plate | Gasket (Poron), PC plate | Gasket, PC plate |
+| PCB | Hot-swap 3/5-pin, south-facing RGB | Hot-swap 3/5-pin, south-facing RGB |
+| Dampening | Poron sandwich + bottom, socket pad, silicone | 5 layers: sandwich foam, PET film, IXPE, bottom foam, silicone |
+| Switches | Quark Matte / Frosted Grey linear, 47–49 gf | CIDOO Pearl White linear, 40 gf |
+| Keycaps | Dye-sub PBT | Double-shot PBT, Cherry profile |
+| Battery | 3000 mAh | 3000 mAh |
+| Connectivity | USB-C / BT 5.0 ×3 / 2.4G, mode via Fn keys | same, mode via hardware switch |
+| Controller | Evision (VID `320f`) | VID `36b0` |
+
+Sources: V3 manual (above), epomaker.com/products/cidoo-v65, mechkeys.com (V65 V3), keeb-finder.com,
+cidootech.com/products/cidoo-qk61-v2, TechPowerUp V65 review (original V65).
 
 ## Commands
 
